@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>四則演算フォーム</title>
+    <!-- この下にCSS記載 -->
+    <style>
+        #number1,#number2 {
+            margin-right:20px;
+            width:100px;
+            height:20px;
+            font-size:large;
+        }
+        .selectarea {
+            margin-top:15px;
+            margin-bottom: 15px;
+        }
+        label {
+            margin-right:20px;
+            font-weight: bold;
+        }
+        button {
+            width:100px;
+            height:30px;
+        }
+
+    </style>
+    <script defer src="arithmetic.js"></script>
+</head>
+<body>
+    <div>
+        <input name="number1" id="number1" type="number" placeholder="数値1">
+        <input name="number2" id="number2" type="number" placeholder="数値2">
+    </div>
+
+    <div class="selectarea">
+        <input type="radio" id="add" name="arithmetic" checked><label for="add"> +</label>
+        <input type="radio" id="min" name="arithmetic"><label for="min"> -</label>
+        <input type="radio" id="mul" name="arithmetic"><label for="mul"> ×</label>
+        <input type="radio" id="divi" name="arithmetic"><label for="divi"> ÷</label>
+        <button class="confirm">決定</button>
+    </div>
+    <p class="result"></p>
+</body>
+</html>
